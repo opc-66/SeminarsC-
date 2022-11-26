@@ -13,7 +13,7 @@ int B = Convert.ToInt32(Console.ReadLine());
 double Pow(double num1, int num2)
 {
     double result = 1;
-    for (int i=0; i <num2; i++)  //i=0 если i<num2 тогда
+    for (int i=0; i <=num2; i++)  //i=0 если i<num2 тогда
     {
         result *= num1;           // result=result*num1 ->//i=i+1
     }
