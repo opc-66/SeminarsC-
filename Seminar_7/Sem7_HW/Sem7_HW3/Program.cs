@@ -35,8 +35,9 @@ for(int j=0; j<matrix.GetLength(1); j++)
     {
         sum = sum + matrix[i, j];
     }
-    double res = Math.Round(sum/matrix.GetLength(0), 2);
-    sum = 0;
-    Console.Write(res + " ");
-}
+    double res = Math.Round(sum/matrix.GetLength(0), 2);  //double sum = Math.Round(sum/matrix.GetLength(0), 2);
+    sum = 0;                                              // Console.Write(sum + " ");
+    Console.Write(res + " ");                             //sum =0;
+}                                                   //По этому варианту программа
+ //выдала ошибку. Не понял почему
 
