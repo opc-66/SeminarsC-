@@ -32,13 +32,11 @@ int [,] GetArray()
 }
 int [,] PrintArray(int[,]array)
 {
-    
-    for (int i = 0; i < array.GetLength(0); i++)
+        for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-        
-           Console.Write(array[i,j]);
+            Console.Write(array[i,j]);
         }
         Console.WriteLine();
     }
@@ -46,8 +44,7 @@ int [,] PrintArray(int[,]array)
 }
 void ChangeCol(int [,] array)
 {
-    // int rowsCount =array.GetLength(0)-1;
-
+    
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j< array.GetLength(1);j++)
@@ -60,12 +57,9 @@ void ChangeCol(int [,] array)
                     array[i,a]= array[i,a+1];
                     array[i,a+1] = temp;
                 }
-            }
-                      
-        }
-                  
-    }
-   
+            }                  
+        }                  
+    }   
 }
 
 PrintArray(GetArray());
