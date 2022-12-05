@@ -11,12 +11,12 @@
 // 8 4 4 2
 
 Console.WriteLine("Введите кол-во строк");
-int rows = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите кол-во колонок");
-int columns = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-int [,] array = new int [rows,columns];
+int [,] array = new int [m,n];
 int [,] GetArray()
 {
     
@@ -24,15 +24,14 @@ int [,] GetArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-        
-           array[i,j] = new Random().Next(0,11);
+            array[i,j] = new Random().Next(0,10);
         }
     }
     return array;
 }
 int [,] PrintArray(int[,]array)
 {
-        for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
@@ -44,7 +43,6 @@ int [,] PrintArray(int[,]array)
 }
 void ChangeCol(int [,] array)
 {
-    
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j< array.GetLength(1);j++)
